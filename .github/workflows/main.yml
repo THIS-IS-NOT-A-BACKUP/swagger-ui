@@ -29,13 +29,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Retry on Failure
-        uses: nick-invision/retry@v2
-        with:
-          timeout_seconds: 15
-          max_attempts: 3
-          retry_on: error
-          command: npm run some-typically-fast-script
       - name: GitHub Sync to Upstream Repository
         uses: dabreadman/sync-upstream-repo@v1.0.0.b
         with: 
