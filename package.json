@@ -58,7 +58,7 @@
     "classnames": "^2.3.1",
     "css.escape": "1.5.1",
     "deep-extend": "0.6.0",
-    "dompurify": "=2.3.3",
+    "dompurify": "=2.3.4",
     "ieee754": "^1.2.1",
     "immutable": "^3.x.x",
     "js-file-download": "^0.4.12",
@@ -89,7 +89,7 @@
     "zenscroll": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/cli": "=7.14.5",
+    "@babel/cli": "=7.16.8",
     "@babel/core": "=7.14.6",
     "@babel/eslint-parser": "=7.16.3",
     "@babel/plugin-proposal-class-properties": "=7.16.0",
@@ -121,7 +121,7 @@
     "deepmerge": "^4.0.0",
     "enzyme": "=3.11.0",
     "eslint": "^7.29.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^25.2.4",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-react": "^7.27.1",
