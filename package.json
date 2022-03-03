@@ -1,10 +1,10 @@
 {
   "name": "swagger-ui",
-  "version": "4.6.0",
+  "version": "4.6.1",
   "main": "./dist/swagger-ui.js",
   "module": "./dist/swagger-ui-es-bundle-core.js",
   "exports": {
-    "./swagger-ui.css": "./swagger-ui.css",
+    "./dist/swagger-ui.css": "./dist/swagger-ui.css",
     ".": {
       "import": "./dist/swagger-ui-es-bundle-core.js",
       "require": "./dist/swagger-ui.js"
@@ -73,7 +73,7 @@
     "js-file-download": "^0.4.12",
     "js-yaml": "=4.1.0",
     "lodash": "^4.17.21",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "randombytes": "^2.1.0",
     "react": "=17.0.2",
     "react-copy-to-clipboard": "5.0.4",
@@ -132,7 +132,7 @@
     "enzyme": "=3.11.0",
     "eslint": "^7.29.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jest": "^25.2.4",
+    "eslint-plugin-jest": "^26.1.1",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-react": "^7.27.1",
     "esm": "=3.2.25",
@@ -152,7 +152,7 @@
     "license-checker": "^25.0.0",
     "lint-staged": "=11.2.6",
     "local-web-server": "^4.2.1",
-    "mini-css-extract-plugin": "^2.4.6",
+    "mini-css-extract-plugin": "^2.5.3",
     "mocha": "=8.4.0",
     "npm-audit-ci-wrapper": "^3.0.2",
     "npm-run-all": "^4.1.5",
@@ -161,7 +161,7 @@
     "postcss": "^8.4.5",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.2.3",
-    "prettier": "^2.3.0",
+    "prettier": "^2.5.1",
     "process": "^0.11.10",
     "react-refresh": "^0.11.0",
     "react-test-renderer": "=17.0.2",
