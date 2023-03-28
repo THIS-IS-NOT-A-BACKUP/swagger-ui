@@ -164,7 +164,7 @@
     "oauth2-server": "^2.4.1",
     "open": "^8.4.0",
     "postcss": "^8.4.14",
-    "postcss-loader": "^7.0.1",
+    "postcss-loader": "^7.1.0",
     "postcss-preset-env": "^8.1.0",
     "prettier": "^2.8.7",
     "process": "^0.11.10",
@@ -185,7 +185,7 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.7.4",
     "webpack-node-externals": "=3.0.0",
-    "webpack-stats-plugin": "=1.0.3"
+    "webpack-stats-plugin": "=1.1.1"
   },
   "config": {
     "deps_check_dir": ".deps_check"
