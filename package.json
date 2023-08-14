@@ -1,6 +1,6 @@
 {
   "name": "swagger-ui",
-  "version": "5.3.1",
+  "version": "5.3.2",
   "main": "./dist/swagger-ui.js",
   "module": "./dist/swagger-ui-es-bundle-core.js",
   "exports": {
@@ -64,7 +64,7 @@
     "start": "npm-run-all --parallel serve-static open-static"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.22.6",
+    "@babel/runtime-corejs3": "^7.22.10",
     "@braintree/sanitize-url": "=6.0.4",
     "base64-js": "^1.5.1",
     "classnames": "^2.3.1",
