@@ -1,6 +1,6 @@
 {
   "name": "swagger-ui",
-  "version": "5.10.0",
+  "version": "5.10.3",
   "main": "./dist/swagger-ui.js",
   "module": "./dist/swagger-ui-es-bundle-core.js",
   "exports": {
@@ -74,7 +74,7 @@
     "start": "npm-run-all --parallel serve-static open-static"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.23.2",
+    "@babel/runtime-corejs3": "^7.23.4",
     "@braintree/sanitize-url": "=6.0.4",
     "base64-js": "^1.5.1",
     "classnames": "^2.3.1",
@@ -112,7 +112,7 @@
     "zenscroll": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/cli": "=7.23.0",
+    "@babel/cli": "=7.23.4",
     "@babel/core": "=7.23.3",
     "@babel/eslint-parser": "=7.23.3",
     "@babel/plugin-transform-runtime": "=7.23.4",
@@ -137,7 +137,7 @@
     "cross-env": "=7.0.3",
     "css-loader": "=6.8.1",
     "cssnano": "=6.0.1",
-    "cypress": "=13.5.1",
+    "cypress": "=13.6.0",
     "dedent": "^1.5.1",
     "deepmerge": "^4.3.1",
     "enzyme": "=3.11.0",
