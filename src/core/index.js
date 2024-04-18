@@ -34,6 +34,7 @@ import {
   optionsFromQuery,
   optionsFromURL,
   optionsFromSystem,
+  optionsFromRuntime,
   mergeOptions,
   inlinePluginOptionsFactorization,
   storeOptionsFactorization
@@ -42,7 +43,8 @@ import {
 
 export default function SwaggerUI(userOptions) {
   const queryOptions = optionsFromQuery()(userOptions)
-  let mergedOptions = mergeOptions({}, defaultOptions, userOptions, queryOptions)
+  const runtimeOptions = optionsFromRuntime()()
+  let mergedOptions = mergeOptions({}, defaultOptions, runtimeOptions, userOptions, queryOptions)
   const storeOptions = storeOptionsFactorization(mergedOptions)
   const InlinePlugin = inlinePluginOptionsFactorization(mergedOptions)
 
@@ -51,14 +53,13 @@ export default function SwaggerUI(userOptions) {
   store.register([mergedOptions.plugins, InlinePlugin])
   const system = store.getSystem()
 
-  const configURL = queryOptions.config ?? mergedOptions.configUrl
   const systemOptions = optionsFromSystem({ system })(mergedOptions)
 
-  optionsFromURL({ url: configURL, system })(mergedOptions)
+  optionsFromURL({ url: mergedOptions.configUrl, system })(mergedOptions)
     .then((urlOptions) => {
       const urlOptionsFailedToFetch = urlOptions === null
 
-      mergedOptions = mergeOptions({}, defaultOptions, systemOptions, userOptions, urlOptions, queryOptions)
+      mergedOptions = mergeOptions({}, defaultOptions, runtimeOptions, systemOptions, userOptions, urlOptions, queryOptions)
       store.setConfigs(mergedOptions)
       system.configsActions.loaded()
 
@@ -90,6 +91,8 @@ export default function SwaggerUI(userOptions) {
 }
 
 SwaggerUI.System = System
+
+SwaggerUI.defaultOptions = defaultOptions
 
 SwaggerUI.presets = {
   base: BasePreset,
