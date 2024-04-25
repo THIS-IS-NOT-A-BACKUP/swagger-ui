@@ -1,6 +1,6 @@
 {
   "name": "swagger-ui",
-  "version": "5.17.1",
+  "version": "5.17.2",
   "main": "./dist/swagger-ui.js",
   "module": "./dist/swagger-ui-es-bundle-core.js",
   "exports": {
@@ -135,7 +135,7 @@
     "cross-env": "=7.0.3",
     "css-loader": "=7.1.1",
     "cssnano": "=6.1.2",
-    "cypress": "=13.8.0",
+    "cypress": "=13.8.1",
     "dedent": "^1.5.3",
     "deepmerge": "^4.3.1",
     "enzyme": "=3.11.0",
