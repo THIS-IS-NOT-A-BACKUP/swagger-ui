@@ -72,7 +72,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.24.7",
-    "@braintree/sanitize-url": "=7.0.3",
+    "@braintree/sanitize-url": "=7.0.4",
     "base64-js": "^1.5.1",
     "classnames": "^2.5.1",
     "css.escape": "1.5.1",
@@ -167,7 +167,7 @@
     "open": "^10.1.0",
     "postcss": "^8.4.39",
     "postcss-loader": "^8.1.1",
-    "postcss-preset-env": "^9.5.14",
+    "postcss-preset-env": "^9.5.15",
     "prettier": "^3.3.2",
     "process": "^0.11.10",
     "react-refresh": "^0.14.2",
