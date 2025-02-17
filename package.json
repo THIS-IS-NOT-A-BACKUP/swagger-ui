@@ -1,6 +1,6 @@
 {
   "name": "swagger-ui",
-  "version": "5.18.3",
+  "version": "5.19.0",
   "main": "./dist/swagger-ui.js",
   "module": "./dist/swagger-ui-es-bundle-core.js",
   "exports": {
@@ -71,7 +71,7 @@
     "start": "npm-run-all --parallel serve-static open-static"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.26.7",
+    "@babel/runtime-corejs3": "^7.26.9",
     "@braintree/sanitize-url": "=7.0.4",
     "@scarf/scarf": "=1.4.0",
     "base64-js": "^1.5.1",
@@ -186,7 +186,7 @@
     "terser-webpack-plugin": "^5.3.11",
     "webpack": "^5.97.1",
     "webpack-bundle-size-analyzer": "^3.1.0",
-    "webpack-cli": "^5.1.4",
+    "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0",
     "webpack-node-externals": "=3.0.0",
     "webpack-stats-plugin": "=1.1.3"
